@@ -1,45 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satheesh Babu K S - Web CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f5;
             margin: 0;
             padding: 0;
         }
+
         .container {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 30px auto;
             background-color: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-        h1, h2, h3 {
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        p, ul {
+            font-size: 16px;
             color: #333;
-        }
-        p {
             line-height: 1.6;
         }
+
         ul {
             padding-left: 20px;
         }
-        .section {
-            margin-bottom: 30px;
-        }
-        .contact-info p, .skills, .languages, .strengths {
+
+        .contact-info p, .skills ul, .languages ul, .strengths ul {
             margin: 5px 0;
         }
-        .skills, .languages, .strengths {
-            list-style-type: disc;
+
+        .personal-interests ul, .skills ul, .strengths ul, .languages ul {
+            list-style-type: square;
         }
+
+        .contact-info {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .personal-interests, .skills, .strengths, .languages {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .personal-data, .experience, .objective, .qualifications {
+            margin-top: 20px;
+        }
+
         footer {
             text-align: center;
             margin-top: 40px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .skills, .languages, .strengths {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills ul, .languages ul, .strengths ul {
+            flex: 1 1 45%;
+        }
+
+        /* Hover Effects */
+        header h1:hover {
+            color: #ffc107;
+        }
+
+        section h2:hover {
+            color: #FF5722;
         }
     </style>
 </head>
@@ -50,7 +127,7 @@
             <p>Logistics, Administration, HR Management | 25+ Years of Experience in UAE</p>
         </header>
 
-        <section class="contact-info section">
+        <section class="contact-info">
             <h2>Contact Information</h2>
             <p><strong>Email:</strong> sajiks73@yahoo.com</p>
             <p><strong>Mobile:</strong> +971505412675, +971558943056</p>
@@ -58,7 +135,7 @@
             <p><strong>Visa Status:</strong> Employee Visa</p>
         </section>
 
-        <section class="languages section">
+        <section class="languages">
             <h2>Languages Known</h2>
             <ul>
                 <li>English</li>
@@ -69,14 +146,14 @@
             </ul>
         </section>
 
-        <section class="objective section">
+        <section class="objective">
             <h2>Career Objective</h2>
             <p>
                 To work for a reputed organization where my technical knowledge, skills, and various experiences are utilized and to further develop myself professionally in a company that offers career opportunities and advancement.
             </p>
         </section>
 
-        <section class="qualifications section">
+        <section class="qualifications">
             <h2>Qualification Summary</h2>
             <ul>
                 <li>Diploma in Electrical and Electronics Engineering</li>
@@ -85,7 +162,7 @@
             </ul>
         </section>
 
-        <section class="skills section">
+        <section class="skills">
             <h2>Technical Expertise</h2>
             <ul>
                 <li>Human Resource Management, Customer Relationship Management, UAE Labor Law</li>
@@ -95,13 +172,13 @@
             </ul>
         </section>
 
-        <section class="experience section">
+        <section class="experience">
             <h2>Experience (25 Years in UAE)</h2>
             <p><strong>Administrative Officer / Logistic Officer</strong><br>
             Ghantoot Group, Abu Dhabi (1998-2024), Till present</p>
         </section>
 
-        <section class="personal-info section">
+        <section class="personal-data">
             <h2>Personal Data</h2>
             <p><strong>Date of Birth:</strong> 15/05/1973</p>
             <p><strong>Gender:</strong> Male</p>
@@ -109,7 +186,7 @@
             <p><strong>Nationality:</strong> Indian</p>
         </section>
 
-        <section class="interests section">
+        <section class="personal-interests">
             <h2>Personal Interests</h2>
             <ul>
                 <li>Reading</li>
@@ -121,7 +198,7 @@
             </ul>
         </section>
 
-        <section class="strengths section">
+        <section class="strengths">
             <h2>Personal Strengths</h2>
             <ul>
                 <li>Excellent communication skills</li>
@@ -131,7 +208,7 @@
             </ul>
         </section>
 
-        <section class="declaration section">
+        <section class="declaration">
             <h2>Declaration</h2>
             <p>I hereby declare that the above information is true and correct to the best of my knowledge.</p>
             <p><strong>Satheesh Babu K S</strong></p>
